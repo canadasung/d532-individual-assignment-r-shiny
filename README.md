@@ -5,7 +5,7 @@ This repository contains an interactive R Shiny dashboard designed to explore an
 
 A key feature of this dashboard is the **AI-Powered Data Filtering** tab, which integrates a Large Language Model (Anthropic's Claude via the `ellmer` package) to dynamically filter the dataset using natural language queries and instantly visualize the results.
 
-**Live Application:** [View the deployed dashboard on Posit Connect](https://wnsong-d532-individual-assignment-r-shiny.share.connect.posit.cloud)
+**Live Application URL:** [View the deployed dashboard on Posit Connect](https://wnsong-d532-individual-assignment-r-shiny.share.connect.posit.cloud)
 
 ## App Features
 - Interactive world map of education indicators
