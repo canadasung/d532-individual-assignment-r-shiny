@@ -51,3 +51,11 @@ In R console, run
 ```
 shiny::runApp()
 ```
+
+## Data Source
+
+The dataset is sourced from [Kaggle - World Educational Data](https://www.kaggle.com/datasets/nelgiriyewithana/world-educational-data/data), compiled from UNESCO Institute for Statistics, UNICEF, and UN Statistics Division.
+
+## License
+
+See [LICENSE](LICENSE) for details.
