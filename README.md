@@ -16,17 +16,18 @@ A key feature of this dashboard is the **AI-Powered Data Filtering** tab, which 
 
 ## Installation & Local Setup
 
-To run this application locally on your Mac, you will need R installed (downloaded directly from CRAN).
+To run this application locally on your computer, you will need R installed ([downloaded directly from CRAN](https://cran.r-project.org/)).
+And follow the steps:
 
 ### 1. Clone the Repository
 Open your terminal and clone this repository to your local machine:
-```bash
-git clone [https://github.com/canadasung/d532-individual-assignment-r-shiny.git](https://github.com/canadasung/d532-individual-assignment-r-shiny.git)
+```
+git clone https://github.com/canadasung/d532-individual-assignment-r-shiny.git
 cd d532-individual-assignment-r-shiny
 ```
 
 ### 2. Install Required R Packages
-Open your R console (or the Positron R terminal) and run the following command to install all necessary dependencies:
+Open your R console and run the following command to install all necessary dependencies:
 ```
 install.packages(c("shiny", "bslib", "dplyr", "tidyr", "readr", "plotly", "DT", "dotenv", "ellmer"))
 ```
@@ -37,15 +38,16 @@ In R console, run
 renv::restore()
 ```
 
-### 4. Set Environment Variable (Local Only)
-To make ChatBot work, you need to add .Renviron locally in the project folder in the same path as the app.R file.
+### 4. Anthropic API and Set Environment Variable (Local Only)
+You may skip this step if you don't have an Anthropic API key ready, but Chat Bot wouldn't be able to response if this step can't be satisfied.
+To make Chat Bot working, you need to prepare your own Anthropic API key and add to a .Renviron file locally in the project folder under the same path as the app.R file.
 In your newly added .Renviron file, please add API keys like following format:
 ```
 ANTHROPIC_API_KEY="your_api_key_here"
-OPENAI_API_KEY="your_api_key_here"
 ```
 
 ### 5. Run the App Locally
+In R console, run
 ```
 shiny::runApp()
 ```
